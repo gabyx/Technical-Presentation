@@ -9,3 +9,10 @@ log/*.log
 tmp/**
 node_modules/
 .sass-cache
+.vscode/ipch
+chrome-data
+Presentation
+Start*
+*.zip
+*.pdf
+*.orig

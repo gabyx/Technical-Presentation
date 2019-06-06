@@ -1,3 +1,12 @@
+# Cyfex Presentations
+
+## Examples:
+
+Checkout `gabriel.nuetzi-cppmeeting`
+ - `npm run install` -> Install all dependencies.
+ - `npm run present` -> Presentation in Browser.
+ - `npm run package` -> PDF and Zip to distribute.
+
 <p align="center">
   <a href="https://revealjs.com">
   <img src="https://hakim-static.s3.amazonaws.com/reveal-js/logo/v1/reveal-black-text-sticker.png" alt="reveal.js" width="500">
@@ -59,7 +68,7 @@ Want to create your presentation using a visual editor? Try the official reveal.
 <br>
 <br>
 
---- 
+---
 <div align="center">
   MIT licensed | Copyright © 2011-2022 Hakim El Hattab, https://hakim.se
 </div>

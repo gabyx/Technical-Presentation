@@ -173,8 +173,8 @@
 	margin: var(--r-block-margin) auto;
 
 	text-align: left;
-	font-size: 0.55em;
-	font-family: var(--r-code-font);
+	font-size: $codeFontSize;
+	font-family: $codeFont;
 	line-height: 1.2em;
 
 	word-wrap: break-word;

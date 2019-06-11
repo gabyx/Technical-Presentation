@@ -50,8 +50,9 @@
     font-family: 'Museo';
     src: url('Museo-300.woff2') format('woff2'),
         url('Museo-300.woff') format('woff');
-    font-weight: normal;
+    font-weight: 300;
     font-style: normal;
+    font-weight: normal;
 }
 
 @font-face {
@@ -76,5 +77,6 @@
         url('Museo-300Italic.woff') format('woff');
     font-weight: 300;
     font-style: italic;
+    font-weight: normal;
 }
 

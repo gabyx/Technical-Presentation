@@ -288,14 +288,15 @@ body {
   border-radius: 2pt;
   background: #ebebeb; }
 
-.reveal pre code {
-  font-size: 16pt;
-  line-height: normal;
-  background: #232323;
-  padding: 0.5ex;
-  padding-left: 1ex;
-  padding-right: 1ex;
+.reveal pre {
   border-radius: 4pt; }
+  .reveal pre code {
+    font-size: 16pt;
+    line-height: normal;
+    background: #232323;
+    padding: 0.5ex;
+    padding-left: 1ex;
+    padding-right: 1ex; }
 
 .reveal .size-h1 {
   font-size: 60pt; }

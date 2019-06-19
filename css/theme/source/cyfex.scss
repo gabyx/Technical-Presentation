@@ -77,14 +77,16 @@ $codeFontSize: 16pt;
   }
 
   // Block Code
-  pre code {
-    font-size: $codeFontSize;
-    line-height: normal;
-    background: #232323;
-    padding: 0.5ex;
-    padding-left: 1ex;
-    padding-right: 1ex;
+  pre {
     border-radius: 4pt;
+    code {
+      font-size: $codeFontSize;
+      line-height: normal;
+      background: #232323;
+      padding: 0.5ex;
+      padding-left: 1ex;
+      padding-right: 1ex;
+    }
   }
 
   // Schriftgrössen

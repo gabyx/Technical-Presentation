@@ -13,7 +13,7 @@
     "build": "gulp build",
     "package-zip": "gulp --exportPresentation=index.html package",
     "package": "npm-run-all -s pdf package-zip",
-    "present": "browser-sync start --index index.html --server --files .",
+    "present": "browser-sync start --index index.html --server --files . --ignore '.git/**'",
     "decktape": "node_modules/.bin/decktape -p 400 reveal \"http://localhost:3000/?fragments=true&decktape\" Presentation.pdf",
     "pdf": "concurrently --kill-others --success first \"browser-sync start --index index.html --server\" \"npm run decktape\""
   },

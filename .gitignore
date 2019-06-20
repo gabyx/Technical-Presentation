@@ -13,6 +13,7 @@ node_modules/
 chrome-data
 Presentation
 Start*
+!export/**
 *.zip
 *.pdf
 *.orig

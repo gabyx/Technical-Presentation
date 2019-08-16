@@ -2,10 +2,12 @@
 
 ## Examples:
 
-Checkout `gabriel.nuetzi-cppmeeting`
- - `npm run install` -> Install all dependencies.
- - `npm run present` -> Presentation in Browser.
- - `npm run package` -> PDF and Zip to distribute.
+Checkout `gabriel.nuetzi-cppmeeting`.
+In Visual Studio Code, inside Terminal:
+
+- `npm run install` -> Install all dependencies.
+- `npm run present` -> Presentation in Browser.
+- `npm run package` -> PDF and Zip to distribute.
 
 <p align="center">
   <a href="https://revealjs.com">

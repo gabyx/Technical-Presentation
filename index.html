@@ -9,7 +9,7 @@
 
   <link rel="stylesheet" href="dist/reset.css">
   <link rel="stylesheet" href="dist/reveal.css">
-  <link rel="stylesheet" href="dist/theme/cyfex.css">
+  <link rel="stylesheet" href="dist/theme/dentsplysirona.css">
 
   <!-- Theme used for syntax highlighting of code -->
   <!-- <link rel="stylesheet" href="lib/css/monokai.css"> -->
@@ -136,9 +136,12 @@
 
   <script src="js/reveal.js"></script>
   <script src="dist/reveal.js"></script>
-  <script src="plugin/notes/notes.js"></script>
   <script src="plugin/markdown/markdown.js"></script>
   <script src="plugin/highlight/highlight.js"></script>
+  <script src="plugin/math/math.js"></script>
+  <script src="plugin/search/search.js"></script>
+  <script src="plugin/zoom/zoom.js"></script>
+  <script src="plugin/notes/notes.js"></script>
   <script>
     // More info about config & dependencies:
     // - https://github.com/hakimel/reveal.js#configuration
@@ -161,16 +164,12 @@
       hideInactiveMouse: true,
       hideMouseTime: 1000,
       // More info https://github.com/hakimel/reveal.js#dependencies
-      plugins: [RevealHighlight, RevealMarkdown, RevealSearch, RevealNotes, RevealMath, RevealZoom],
+      plugins: [RevealMarkdown, RevealHighlight, RevealSearch, RevealNotes, RevealMath, RevealZoom],
       dependencies : [
         // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
         { src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
 
-        // Code focus.
-        {
-          src: 'plugin/code-focus/reveal-code-focus.js',
-          async: true, callback: function () { RevealCodeFocus(); }
-        },
+
       ]
     });
   </script>

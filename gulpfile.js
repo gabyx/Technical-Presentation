@@ -271,13 +271,11 @@ gulp.task('default', gulp.series(gulp.parallel('js', 'css', 'plugins'), 'test'))
 
 gulp.task('build', gulp.parallel('js', 'css', 'plugins'))
 
-gulp.task('export-launchers', (cb) => {
-    let index = options.get('export-presentation') || 'index.html'
+gulp.task('export-launchers', (cb) =>
     gulp.src(["./export/**.sh", "./export/**.cmd"])
-        .pipe(replace('@presentationIndexFileName@', index))
+        .pipe(replace('@presentationIndexFileName@', options.get('export-presentation') || 'index.html'))
         .pipe(gulp.dest('./'))
-    cb()
-})
+)
 
 gulp.task('package-reveal', () =>
 

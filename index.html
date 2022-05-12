@@ -17,12 +17,6 @@
 
   <!-- Printing and PDF exports -->
   <script>
-    var link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.type = 'text/css';
-    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
-    document.getElementsByTagName('head')[0].appendChild(link);
-
     // If decktape export we need to load some other css
     // Emoji-Convertion
     if(window.location.search.match(/decktape/gi))
@@ -134,7 +128,6 @@
     </div>
   </div>
 
-  <script src="js/reveal.js"></script>
   <script src="dist/reveal.js"></script>
   <script src="plugin/markdown/markdown.js"></script>
   <script src="plugin/highlight/highlight.js"></script>
@@ -165,12 +158,6 @@
       hideMouseTime: 1000,
       // More info https://github.com/hakimel/reveal.js#dependencies
       plugins: [RevealMarkdown, RevealHighlight, RevealSearch, RevealNotes, RevealMath, RevealZoom],
-      dependencies : [
-        // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
-        { src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
-
-
-      ]
     });
   </script>
 </body>

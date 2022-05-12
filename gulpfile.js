@@ -21,6 +21,8 @@ const eslint = require('gulp-eslint')
 const minify = require('gulp-clean-css')
 const connect = require('gulp-connect')
 const autoprefixer = require('gulp-autoprefixer')
+const options = require('gulp-options');
+const replace = require('gulp-string-replace');
 
 const root = yargs.argv.root || '.'
 const port = yargs.argv.port || 8000
@@ -269,22 +271,34 @@ gulp.task('default', gulp.series(gulp.parallel('js', 'css', 'plugins'), 'test'))
 
 gulp.task('build', gulp.parallel('js', 'css', 'plugins'))
 
-gulp.task('package', gulp.series(() =>
+gulp.task('export-launchers', (cb) => {
+    let index = options.get('export-presentation') || 'index.html'
+    gulp.src(["./export/**.sh", "./export/**.cmd"])
+        .pipe(replace('@presentationIndexFileName@', index))
+        .pipe(gulp.dest('./'))
+    cb()
+})
+
+gulp.task('package-reveal', () =>
 
     gulp.src(
         [
             './index.html',
             './dist/**',
             './lib/**',
-            './images/**',
             './plugin/**',
-            './**.md'
+            './files/**',
+            './**.pdf',
+            './**.md',
+            'start-presentation-unix.sh',
+            'start-presentation-win.cmd',
         ],
         { base: './' }
     )
-    .pipe(zip('reveal-js-presentation.zip')).pipe(gulp.dest('./'))
+    .pipe(zip('presentation.zip')).pipe(gulp.dest('./'))
+)
 
-))
+gulp.task('package', gulp.series("export-launchers", 'package-reveal'))
 
 gulp.task('reload', () => gulp.src(['*.html', '*.md'])
     .pipe(connect.reload()));

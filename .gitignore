@@ -11,8 +11,7 @@ node_modules/
 .sass-cache
 .vscode/ipch
 chrome-data
-Presentation
-Start*
+start-*
 !export/**
 *.zip
 *.pdf

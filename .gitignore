@@ -9,3 +9,12 @@ log/*.log
 tmp/**
 node_modules/
 .sass-cache
+.vscode/ipch
+chrome-data
+start-*
+!export/**
+*.zip
+*.pdf
+*.orig
+publish
+package-lock.json

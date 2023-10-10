@@ -12,6 +12,9 @@ $mainColor: #eee;
 // Vertical spacing between blocks of text
 $blockMargin: 20px;
 
+// Image
+$imgBorderSize: 4px;
+
 // Headings
 $headingMargin: 0 0 $blockMargin 0;
 $headingFont: 'League Gothic', Impact, sans-serif;
@@ -29,6 +32,7 @@ $heading3Size: 1.55em;
 $heading4Size: 1.00em;
 
 $codeFont: monospace;
+$codeFontSize: 0.55em;
 
 // Links and actions
 $linkColor: #13DAEC;

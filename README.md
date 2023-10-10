@@ -1,3 +1,14 @@
+# Cyfex Presentations
+
+## Examples:
+
+Checkout `gabriel.nuetzi-cppmeeting`.
+In Visual Studio Code, inside Terminal:
+
+- `npm run install` -> Install all dependencies.
+- `npm run present` -> Presentation in Browser.
+- `npm run package` -> PDF and Zip to distribute.
+
 <p align="center">
   <a href="https://revealjs.com">
   <img src="https://hakim-static.s3.amazonaws.com/reveal-js/logo/v1/reveal-black-text-sticker.png" alt="reveal.js" width="500">
@@ -44,7 +55,7 @@ Hakim's open source work is supported by <a href="https://github.com/sponsors/ha
 - 🖌 [Try the visual editor for reveal.js at Slides.com](https://slides.com/)
 - 🎬 [Watch the reveal.js video course (paid)](https://revealjs.com/course)
 
---- 
+---
 <div align="center">
   MIT licensed | Copyright © 2011-2023 Hakim El Hattab, https://hakim.se
 </div>

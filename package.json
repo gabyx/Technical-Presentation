@@ -15,7 +15,7 @@
     "package": "npm-run-all -s build pdf package-zip",
     "publish": "npm-run-all -s publish::clean publish::write",
     "package-zip": "gulp --export-presentation=index.html package",
-    "pdf::export": "delay 7 && decktape -p 100 reveal \"http://localhost:3000/?fragments=true&decktape\" presentation.pdf",
+    "pdf::export": "delay 7 && decktape -p 400 reveal \"http://localhost:3000/?fragments=true&decktape\" presentation.pdf",
     "pdf::server": "browser-sync start --index index.html --server --port 3000",
     "pdf": "concurrently --kill-others --success first \"npm run pdf::export\" \"npm run pdf::server\"",
     "publish::clean": "del-cli --force \"./publish/presentation\"",

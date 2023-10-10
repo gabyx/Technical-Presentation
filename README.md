@@ -9,6 +9,16 @@ In Visual Studio Code, inside Terminal:
 - `npm run present` -> Presentation in Browser.
 - `npm run package` -> PDF and Zip to distribute.
 
+## Modifications
+
+- Company Logo: Edit the file [`company-logo.svg`](css/theme/source/files/company-logo.svg).
+- Replace embedded image in [`company.scss`](css/theme/source/company.scss) with
+
+  ```shell
+  repl=$(cat css/theme/source/files/company-logo.svg | base64 -w 0| sed "s/\+/\\\+/g")
+  sed -i -E "s@background-image(.*);base64,.*\"@background-image\1;base64,$repl\"@" css/theme/source/company.scss
+  ```
+
 <p align="center">
   <a href="https://revealjs.com">
   <img src="https://hakim-static.s3.amazonaws.com/reveal-js/logo/v1/reveal-black-text-sticker.png" alt="reveal.js" width="500">

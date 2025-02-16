@@ -1,0 +1,63 @@
+/* Code Focus */
+.reveal .line {
+  display: block;
+}
+.reveal .line.focus {
+  background: #383838;
+}
+
+/* Column Divs */
+.reveal .columns {
+  gap: min(0.5vw, 1em);
+}
+
+/* Border color for non-compiling stuff */
+.reveal pre.no-compile code {
+  border-top: none;
+  border-inline: 0.4rem solid red;
+  border-right: none;
+}
+
+.reveal pre.does-compile code {
+  border-top: none;
+  border-inline: 0.4rem solid green;
+  border-right: none;
+}
+
+/* Some how code blocks are only 400px max size */
+.reveal pre code {
+  max-height: initial;
+}
+
+.reveal .column pre {
+  width: 100%;
+}
+
+/* Highlight the lines */
+.reveal code .highlight-line {
+  background: #323232;
+}
+.reveal code table {
+  width: 100%;
+}
+
+/* Tweak comments color */
+.hljs-comment {
+  color: #5e5e5e;
+}
+
+/* Tweak keyword */
+.hljs-keyword {
+  font-weight: 600;
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reveal pre,
+.reveal code {
+  scrollbar-width: none;
+}

@@ -9,22 +9,18 @@ This uses [`revealjs`](https://github.com/hakimel/reveal.js) with some
 modifications to package to PDF and standalone HTML format. Also it includes a
 company `scss` file for design modifications.
 
-**This is a fork of
-[`technical-presentation`](https://github.com/gabyx/technical-presentation.git)
-with some small modifications for SDSC.**
-
 - **See the
-  [demo presentation here](https://sdsc-ordes.github.io/technical-presentation/gh-pages/demo)**.
+  [demo presentation here](https://gabyx.github.io/Technical-Presentation/gh-pages/demo)**.
 - **See some other
-  [Rust Workshop](https://sdsc-ordes.github.io/technical-presentation/gh-pages/rust-workshop/part-1/#/title-slide)**
-  [src](https://github.com/sdsc-ordes/technical-presentation/tree/feat/rust-workshop).
+  [Rust Workshop](https://sdsc-ordes.github.io/technical-presentation/gh-pages/rust-workshop/part-1/#/title-slide)
+  [[src]](https://github.com/sdsc-ordes/technical-presentation/tree/feat/rust-workshop).**
 - **See some other
-  [C++ presentation here](https://gabyx.github.io/tech-pr-cpp-value-catergories)**
-  [src](https://github.com/gabyx/tech-pr-cpp-value-catergories).
+  [C++ presentation here](https://gabyx.github.io/tech-pr-cpp-value-catergories)
+  [[src]](https://github.com/gabyx/tech-pr-cpp-value-catergories).**
 
 Authors:
 
-- [Gabriel Nützi](https://github.com/gabyx)
+- [Gabriel Nützi](https://github.com/gabyx) and
 
 > [!WARNING]
 >
@@ -75,21 +71,14 @@ You need the following tools:
 
 ## Usage
 
-1. **`just init`** -> Init the `build` folder with the pinned
-   [`reveal.js`](.gitmodules) source and inject some [changed files](src/mixin)
-   (styles, fonts, etc.) and install dependencies inside the build folder.
+1. **`just serve`** -> Launches process-compose to initialize/watch and present
+   the presentation. You can edit and see the changes on-the-fly on
+   `http://localhost:3000`.
 
-2. **`just watch`** -> Watch the files in [`src`](src/) and synchronize changes
-   to the `build` folder. This is needed to continuously update your changes
-   source files and make the browser reload the page.
-
-3. **`just present`** -> Serve the presentation in the browser and continuously
-   reload the page.
-
-4. **`just package`** -> Export the presentation as HTML and PDF inside a `.zip`
+1. **`just package`** -> Export the presentation as HTML and PDF inside a `.zip`
    file to the [`publish`](publish) folder.
 
-5. **`just publish`** -> Build and upload the (selected) presentation to the
+1. **`just publish`** -> Build and upload the (selected) presentation to the
    `publish` **branch** in the folder `docs/gh-pages` which can then be served
    by Github pages. The
    [`.publish.yaml`](./src/presentations/presentation-1/.publish.yaml) helps in

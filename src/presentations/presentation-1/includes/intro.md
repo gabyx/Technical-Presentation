@@ -448,4 +448,4 @@ Emoji: <span></span>
 
 ## Disclaimer
 
-Customized with ❤️ by Gabriel Nützi for SDSC.
+Customized with ❤️ by Gabriel Nützi.

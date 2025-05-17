@@ -33,7 +33,7 @@ clean:
 serve:
     #!/usr/bin/env bash
     set -eu
-    devenvup=$(nix build --no-pure-eval -L "./tools/nix#devenv-up" --print-out-paths)
+    devenvup=$(nix build --print-out-paths --no-out-link --no-link "./tools/nix#devenv-up")
     "$devenvup"
 
 # Build the reveal presentation.
